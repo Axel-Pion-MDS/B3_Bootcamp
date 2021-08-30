@@ -1,0 +1,10 @@
+mkdir ~/bootcamp
+ls -n ~/bootcamp/ ~/desktop/bootcamp
+mkdir ~/bootcamp/day-1
+mkdir ~/bootcamp/day-1/exercice-02
+vim main
+cd ~/bootcamp/day-1/exercice-02 && mkdir test1 test2 test3 test4
+setfacl -m u:login:rwx test1
+chmod u=r,g=r,o=r test2
+chmod u=rx,g=rx,o=rx test3
+chmod u=rwx,g=rwx,o=rwx test4
