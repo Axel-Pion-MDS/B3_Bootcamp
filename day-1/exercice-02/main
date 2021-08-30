@@ -1,8 +1,8 @@
 mkdir ~/bootcamp
-ls -n ~/bootcamp/ ~/desktop/bootcamp
+ln -s ~/bootcamp ~/Desktop/bootcamp
 mkdir ~/bootcamp/day-1
 mkdir ~/bootcamp/day-1/exercice-02
-vim main
+vim ~/bootcamp/day-1/exercice-02/main
 cd ~/bootcamp/day-1/exercice-02 && mkdir test1 test2 test3 test4
 setfacl -m u:login:rwx test1
 chmod u=r,g=r,o=r test2
