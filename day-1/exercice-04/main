@@ -1,0 +1,1 @@
+curl -X POST -d '{"email": "pionaxel@gmail.com", "firstName": "Axel", "lastName": "Pion", "gitlabUrl": "https://gitlab.com/Maengdok/bootcamp.git", "promo": "b3"} https://rvv8dmfyfa.execute-api.eu-west-3.amazonaws.com/bootcamp/students/create
