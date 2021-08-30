@@ -1,0 +1,8 @@
+touch test0 test1 test2 test3 test4 test6
+ln -s test6 test5
+chmod 751 test0
+chmod 314 test1
+chmod 514 test2
+chmod 014 test3
+chmod 644 test4
+chmod 454 test6
