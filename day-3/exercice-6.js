@@ -1,6 +1,7 @@
 export const my_display_combv2 = () => {
   let array = [];
-
+  let str = "";
+  
   for (let i = 0; i < 10; i++) {
     for (let j = 0; j < 10; j++) {
       if (j == 10) {
@@ -11,7 +12,8 @@ export const my_display_combv2 = () => {
           k = 0;
 	}
 	if (i != j && i != k && j != k) {
-          array = [i, j, k];
+	  str = i + " " + j + " " + k
+          array = [str];
 	}
       }
     }
@@ -19,3 +21,4 @@ export const my_display_combv2 = () => {
   return array;
 }
 
+my_display_combv2();
