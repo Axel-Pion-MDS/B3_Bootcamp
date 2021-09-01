@@ -20,5 +20,3 @@ export const my_display_combv2 = () => {
   }
   return array;
 }
-
-my_display_combv2();
