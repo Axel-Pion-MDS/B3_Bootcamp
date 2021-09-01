@@ -1,6 +1,5 @@
 export const my_is_posi_neg = (nbr) => {
   let result = "";
-  let i = 0;
   if (nbr == undefined || nbr == null) {
     result = "POSITIF";
   }
