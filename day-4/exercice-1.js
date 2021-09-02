@@ -30,13 +30,13 @@ export class My_Wallet {
     let newSum = 0;
     if (typeof nbr == "number" && nbr >= 0) {
       if (nbr > this.sum) {
-	newSum = this.sum;
+	      newSum = this.sum;
         this.sum = 0;
-	return (`you have remove ${newSum}€`);
+	      return (`you have remove ${newSum}€`);
       }
       else {
         this.sum = this.sum - nbr;
-	return (`you have remove ${nbr}€`);
+	      return (`you have remove ${nbr}€`);
       }
     }
     else if (typeof nbr == "number" && nbr <= 0) {
