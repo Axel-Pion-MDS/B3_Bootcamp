@@ -8,7 +8,8 @@ export class My_Wallet {
       return (`${this.sum}€`);
     }
     else {
-      return Error("not is a number");
+      this.sum = 0;
+      return ("0€");
     }
   }
 
