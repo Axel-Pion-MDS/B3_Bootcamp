@@ -4,16 +4,22 @@ export class My_Wallet {
   }
 
   get = () => {
-    return (this.sum >= 0 ? `${this.sum}€` : "0€");
+    if (this.sum >= 0 && typeof this.sum == "number") {
+      return (`${this.sum}€`);
+    }
+    else {
+      this.sum = 0;
+      return ("0€");
+    }
   }
 
   add = (nbr) => {
     if (typeof nbr == "number" && nbr >= 0) {
       this.sum = this.sum + nbr;
-      return (`you have added ${nbr}€`);
+      return (`you have adding ${nbr}€`);
     }
     else if (typeof nbr == "number" && nbr <= 0) {
-      return ("you have added 0€");
+      return ("you have adding 0€");
     }
     else {
       return Error("not is a number");
@@ -24,17 +30,17 @@ export class My_Wallet {
     let newSum = 0;
     if (typeof nbr == "number" && nbr >= 0) {
       if (nbr > this.sum) {
-	newSum = this.sum;
+	      newSum = this.sum;
         this.sum = 0;
-	return (`you have removed ${newSum}€`);
+	      return (`you have remove ${newSum}€`);
       }
       else {
         this.sum = this.sum - nbr;
-	return (`you have removed ${nbr}€`);
+	      return (`you have remove ${nbr}€`);
       }
     }
     else if (typeof nbr == "number" && nbr <= 0) {
-      return ("you have removed 0€");
+      return ("you have remove 0€");
     }
     else {
       return Error("not is a number");
